@@ -30,12 +30,35 @@
         .split img{
             width: 100%;
         }
+
+        /*  Grid responsive (multi column) */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 1px solid salmon;
+            padding: 10px;
+            border-radius: 12px;
+            text-align: center;
+        }
         @media screen and (max-width: 576px){
+            /* responsive split screen using flex */
             .two-part{
                 flex-direction: column-reverse;
             }
             .split{
                 width: 100%;
+            }
+            /*  Grid responsive (multi column) */
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 700px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
             }
         }
     </style>
@@ -57,5 +80,118 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-1</h1>
+                <h3>price: 100</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto similique suscipit nam nisi fugiat repellat. Accusamus voluptate, veritatis ad quae exercitationem, reprehenderit sapiente repellat voluptatibus earum ab aliquam doloribus.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-2</h1>
+                <h3>price: 200</h3>
+                <p>Repellat, neque at eius ex natus quasi consequatur dicta necessitatibus assumenda, aliquid, dolores nam eveniet illo repellendus eos amet ut unde sint culpa. Reprehenderit, voluptate nobis. Asperiores reprehenderit consectetur saepe?</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-3</h1>
+                <h3>price: 300</h3>
+                <p>Libero explicabo, voluptate tenetur quidem, blanditiis sint sapiente laboriosam et consectetur provident magnam, expedita deleniti quibusdam sit ipsa cumque nesciunt. Vero reiciendis ut facere quisquam exercitationem cupiditate aspernatur odio nobis.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-4</h1>
+                <h3>price: 400</h3>
+                <p>Placeat quam, temporibus provident, nesciunt maxime iste fugit ipsa ut, quod nostrum tempore non voluptatibus sapiente obcaecati. Tempora impedit maiores voluptatibus sapiente. Nisi omnis enim reiciendis itaque necessitatibus voluptatibus doloribus!</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-5</h1>
+                <h3>price: 500</h3>
+                <p>Maxime tempore soluta quia sint? Eius adipisci, magnam expedita nihil temporibus, in omnis sunt voluptas eos necessitatibus quasi numquam. Aspernatur odio fugiat quasi sint ipsum ex possimus, eligendi reiciendis iusto?</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-6</h1>
+                <h3>price: 600</h3>
+                <p>Vero doloribus rem distinctio eius nisi vitae, aspernatur impedit nihil alias dignissimos eos dolorum voluptatem quasi in molestiae, non eum qui quis placeat. Vero error earum harum veritatis est. Error?</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-7</h1>
+                <h3>price: 700</h3>
+                <p>Officia asperiores tenetur veniam nulla necessitatibus vel sint nemo illum at rem repudiandae repellendus amet fugiat molestias minus error eveniet porro maiores, corporis ut? Amet quidem est ex alias error.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-8</h1>
+                <h3>price: 800</h3>
+                <p>Harum, praesentium. Magni excepturi facere quasi qui perferendis expedita accusamus, mollitia dignissimos dolores minima deserunt, molestiae eius velit temporibus. Nemo nam explicabo, officiis iste provident laudantium ab dolores eos veritatis.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-9</h1>
+                <h3>price: 900</h3>
+                <p>At ipsa repudiandae maiores rerum consequatur neque numquam iste delectus? Qui voluptatem autem nam, ad enim, officiis temporibus at quod asperiores, molestias accusantium neque laborum consequuntur voluptatibus. Tenetur, assumenda rerum.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-10</h1>
+                <h3>price: 1000</h3>
+                <p>Odit aperiam laborum sequi, quasi, a minima consequuntur voluptas, quibusdam quos rerum dolore officiis nulla obcaecati eveniet sit eius odio quae autem molestiae. Similique nam, tempora porro eos illum modi?</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-11</h1>
+                <h3>price: 1100</h3>
+                <p>Ex delectus quos modi laboriosam aspernatur. Accusantium blanditiis sapiente cupiditate beatae at facilis veniam earum eius eligendi! Velit, sed natus exercitationem voluptatum unde commodi, dolore minus ratione fuga cumque incidunt.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-12</h1>
+                <h3>price: 1200</h3>
+                <p>Vitae assumenda dolores aliquam odit quibusdam. Cupiditate excepturi, mollitia totam molestias non dolor repellat explicabo cumque. Excepturi earum, perferendis voluptatibus vel adipisci reprehenderit cum neque! Repellendus maiores quas nobis animi?</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-13</h1>
+                <h3>price: 1300</h3>
+                <p>Corporis sed voluptatibus id iusto recusandae adipisci voluptates delectus? Nesciunt iure quam accusantium, velit expedita tenetur quibusdam dignissimos quod modi maxime perspiciatis aliquam nulla! Deleniti non quos molestias iure sed.</p>
+                <button>order now</button>
+            </div>
+            <div class="food">
+                <img src="./images/food.jpg" alt="">
+                <h1>items-14</h1>
+                <h3>price: 1400</h3>
+                <p>Nihil, voluptates non nam reiciendis eius aperiam inventore, ratione asperiores deserunt beatae ad voluptas tempore corrupti. Ad obcaecati corrupti adipisci reprehenderit debitis distinctio ab, quam ducimus eos dolorum illo dignissimos.</p>
+                <button>order now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        - Responsive website
+            1. viewport meta tag
+            2. CSS relative unit
+            3. Responsive image (fluid image)
+            4. body max-width and margin auto
+            5. responsive split screen using flex (two column)
+            6. Grid responsive (multi column)
+            7. Responsive Menu (Bootstrap) - - - Future
+    -->
 </body>
 </html>
